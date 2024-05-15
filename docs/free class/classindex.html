@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iroiro</title>
+</head>
+
+<body>
+    <h2>ハイジャック検索</h2>
+    <h3>google</h3>
+    <form action="https://www.google.com/search">
+
+        <input type="text" name="q">
+        <button>google検索</button>
+
+    </form>
+    <h3>youtube</h3>
+    <form action="https://www.youtube.com/results?search">
+
+        <input type="text" name="q">
+        <button>youtube検索</button>
+    </form>
+
+
+
+    <hr>
+    <h2>利用規約</h2>
+    <form action="/riyoukiyaku">
+        <input type="checkbox" id="agree" name="agree_check">
+        <label for="agree">利用規約に同意します</label>
+        <button>送信</button>
+
+
+
+    </form>
+    <hr>
+
+    <h2>サイズ</h2>
+    <form action="/anke-to">
+
+        <p>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="s">S:</label>
+            <input type="radio" name="size" id="m" value="m">
+            <label for="m">M:</label>
+            <input type="radio" name="size" id="L" value="L">
+            <label for="L">L:</label>
+
+            <!-- nameでradioのグループ化
+                idでlabelと結びつける
+                valueで送信した時に情報をのせる
+            
+            -->
+
+            <button>送信</button>
+
+    </form>
+
+    </p>
+    <hr>
+    <form action="sizee">
+
+        <p>
+            <label for="size">サイズ</label>
+            <select name="meal" id="size">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+
+
+            </select>
+            <button>送信</button>
+        </p>
+
+    </form>
+
+    <form action="/chhh">
+
+        <input type="range" name="chhh" id="che" min="0" max="100" step="5" value="30">
+        <label for="che">チーズの量</label>
+        <button>送信</button>
+
+
+    </form>
+
+    <form action="/come">
+
+        <p>
+            <label for="come">コメントを入力してください</label>
+            <br>
+            <textarea name="come" id="come" rows="5" cols="50" placeholder="コメントを入力してください"></textarea>
+
+        </p>
+
+        <button>送信</button>
+    </form>
+
+
+</body>
+
+</html>
