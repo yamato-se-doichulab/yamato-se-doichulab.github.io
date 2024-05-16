@@ -467,6 +467,14 @@ i {
   border: 0;
 }
 
+.parent {
+  color: aliceblue;
+  width: 100%;
+  border: 10px solid rgb(93, 0, 255);
+  text-align: center;
+  background-color: black;
+}
+
 /*------------------------------------------------
 /* 2.3 Forms
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
