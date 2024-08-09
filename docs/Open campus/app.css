@@ -75,3 +75,20 @@ li:hover .submenu {
     display: block;
     /* メニュー項目にホバーすると表示 */
 }
+
+.name123 {
+    color: gray;
+    font-size: 1rem;
+}
+
+.oomozi1 {
+    font-weight: bold;
+}
+
+.footer1 {
+    background-color: #424242;
+    padding: 1vw;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
