@@ -54,3 +54,24 @@ h1 {
     font-family: "Kosugi Maru", sans-serif;
     font-size: 3em;
 }
+
+
+.navbar-brand {
+    font-family: "Permanent Marker", cursive;
+}
+
+
+.submenu {
+    display: none;
+    /* 初期状態では非表示 */
+}
+
+.submenu li {
+    /* サブメニューのスタイル */
+    padding: 10px;
+}
+
+li:hover .submenu {
+    display: block;
+    /* メニュー項目にホバーすると表示 */
+}
