@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="jp">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JR吹田駅</title>
     <link rel="stylesheet" href="JRSuitaCSS.css">
-    <script src="JRSuitaJS.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="side-bar">
-            JR線<br><br><br><br><br><br>
+            <div id="clock"></div><br>
+            <script src="JRSuitaJS.js"></script>
+            J R 線<br><br><br><br><br><br>
+            <button id="fullscreenButton">全画面表示</button>
         </div>
         <div class="main-content">
             <div class="header">
@@ -24,29 +26,33 @@
                         <th>行先</th>
                         <th>発車時刻</th>
                         <th>発車まで</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>先発</td>
-                        <td><div id="type1"></div></td>
+                        <td style="font-weight: bold;">先　発</td>
+                        <td><div id="type1" style="transform: skewX(-15deg); font-weight: bold;"></div></td>
                         <td><div id="dest1"></div></td>
                         <td><div id="time1"></div></td>
                         <td><div id="remain1"></div></td>
+                        <td><div id="judge1"></div></td>
                     </tr>
                     <tr>
-                        <td>次発</td>
-                        <td><div id="type2"></div></td>
+                        <td style="font-weight: bold;">次　発</td>
+                        <td><div id="type2" style="transform: skewX(-15deg); font-weight: bold;"></div></td>
                         <td><div id="dest2"></div></td>
                         <td><div id="time2"></div></td>
                         <td><div id="remain2"></div></td>
+                        <td><div id="judge2"></div></td>
                     </tr>
                     <tr>
-                        <td>次々発</td>
-                        <td><div id="type3"></div></td>
+                        <td style="font-weight: bold;">次々発</td>
+                        <td><div id="type3" style="transform: skewX(-15deg); font-weight: bold;"></div></td>
                         <td><div id="dest3"></div></td>
                         <td><div id="time3"></div></td>
                         <td><div id="remain3"></div></td>
+                        <td><div id="judge3"></div></td>
                     </tr>
                 </tbody>
             </table>
@@ -63,29 +69,33 @@
                         <th>行先</th>
                         <th>発車時刻</th>
                         <th>発車まで</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>先発</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td style="font-weight: bold;">先　発</td>
+                        <td><div id="type4" style="transform: skewX(-15deg); font-weight: bold;"></div></td>
+                        <td><div id="dest4"></div></td>
+                        <td><div id="time4"></div></td>
+                        <td><div id="remain4"></div></td>
+                        <td><div id="judge4"></div></td>
                     </tr>
                     <tr>
-                        <td>次発</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td style="font-weight: bold;">次　発</td>
+                        <td><div id="type5" style="transform: skewX(-15deg); font-weight: bold;"></div></td>
+                        <td><div id="dest5"></div></td>
+                        <td><div id="time5"></div></td>
+                        <td><div id="remain5"></div></td>
+                        <td><div id="judge5"></div></td>
                     </tr>
                     <tr>
-                        <td>次々発</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td style="font-weight: bold;">次々発</td>
+                        <td><div id="type6" style="transform: skewX(-15deg); font-weight: bold;"></div></td>
+                        <td><div id="dest6"></div></td>
+                        <td><div id="time6"></div></td>
+                        <td><div id="remain6"></div></td>
+                        <td><div id="judge6"></div></td>
                     </tr>
                 </tbody>
             </table>
