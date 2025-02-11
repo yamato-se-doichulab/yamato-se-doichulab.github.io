@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阪急豊津駅</title>
+    <link rel="stylesheet" href="HankyuToyotsuCSS.css">
+</head>
+<body>
+    <div class="container">
+        <div class="side-bar">
+            <div id="clock"></div><br>
+            <script src="HankyuToyotsuJS.js"></script>
+            阪 急 線<br>(平日)<br><br><br><br>
+            <p style="font-size: 20px;">〇：十分間に合います<br>△：間に合わないかも<br>✕：諦めてください</p>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <div class="title">　　　阪急豊津駅 北千里方面</div>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>種別</th>
+                        <th>行先</th>
+                        <th>発車時刻</th>
+                        <th>発車まで</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="font-weight: bold;">先　発</td>
+                        <td><div id="type1" style="font-weight: bold;"></div></td>
+                        <td><div id="dest1"></div></td>
+                        <td><div id="time1"></div></td>
+                        <td><div id="remain1"></div></td>
+                        <td><div id="judge1"></div></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">次　発</td>
+                        <td><div id="type2" style="font-weight: bold;"></div></td>
+                        <td><div id="dest2"></div></td>
+                        <td><div id="time2"></div></td>
+                        <td><div id="remain2"></div></td>
+                        <td><div id="judge2"></div></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">次々発</td>
+                        <td><div id="type3" style="font-weight: bold;"></div></td>
+                        <td><div id="dest3"></div></td>
+                        <td><div id="time3"></div></td>
+                        <td><div id="remain3"></div></td>
+                        <td><div id="judge3"></div></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <div class="header">
+                <div class="title">　　　阪急豊津駅 大阪梅田/天下茶屋方面</div>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>種別</th>
+                        <th>行先</th>
+                        <th>発車時刻</th>
+                        <th>発車まで</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="font-weight: bold;">先　発</td>
+                        <td><div id="type4" style="font-weight: bold;"></div></td>
+                        <td><div id="dest4"></div></td>
+                        <td><div id="time4"></div></td>
+                        <td><div id="remain4"></div></td>
+                        <td><div id="judge4"></div></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">次　発</td>
+                        <td><div id="type5" style="font-weight: bold;"></div></td>
+                        <td><div id="dest5"></div></td>
+                        <td><div id="time5"></div></td>
+                        <td><div id="remain5"></div></td>
+                        <td><div id="judge5"></div></td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">次々発</td>
+                        <td><div id="type6" style="font-weight: bold;"></div></td>
+                        <td><div id="dest6"></div></td>
+                        <td><div id="time6"></div></td>
+                        <td><div id="remain6"></div></td>
+                        <td><div id="judge6"></div></td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <marquee behavior="scroll" direction="left" scrollamount="16" style="font-size: 40px;">
+                また、この掲示板が表示可能な時刻表は、現在は平日ダイヤのみです。休日ダイヤの表示は、今後のアップデートにて追加する予定です。
+                　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+            </marquee>
+        </div>
+    </div>
+</body>
+</html>
