@@ -1,0 +1,174 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f0f0f0; /* 背景色を仮設定 */
+    color: #333;
+    overflow: hidden; /* スクロールバーを隠す */
+    background-image:url(YU-MainGate202303.jpg);
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* 画面全体の高さ */
+    position: relative; /* スクロールテキストの位置決めの基準 */
+    padding-bottom: 40px; /* スクロールテキスト分のスペース */
+    background: url('newimgTimetable.jpg') no-repeat center center; /* 背景画像として設定 */
+    background-size: cover; /* 画像をコンテナに合わせる */
+}
+
+.left-panel {
+    width: 25%; /* 左パネルの幅 */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 中央揃え */
+}
+
+.datetime-container {
+    background-color: #555; /* グレー背景 */
+    color: white;
+    border-radius: 50%; /* 円形 */
+    width: 250px; /* 円のサイズ */
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative; /* 秒表示の位置決め */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    
+    padding: 0 30px 30px 0;
+    margin: -100px 0 0 -250px;
+}
+
+.date {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.time {
+    font-size: 3.5em;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.seconds {
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 30px; /* 位置調整 */
+    right: 30px;
+    margin: -1px 0px 30px -100px;
+    font-weight: bold;
+}
+
+
+
+.weather-info {
+    /* 天気予報エリア固有のスタイル */
+    text-align: center;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background-color: #555;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 0 30px 30px 0;
+    margin: -50px 0 0 -300px;
+}
+
+.extra-info {
+    /* なんかいるエリア固有のスタイル */
+    background-color: rgba(245, 245, 245, 0.8);
+    width: 150px;
+    height: 150px;
+}
+
+.right-panel {
+    width: 75%; /* 右パネルの幅 */
+    padding: 20px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2列表示 */
+    grid-template-rows: repeat(2, 1fr);    /* 2行表示 */
+    gap: 20px; /* グリッド間の隙間 */
+    height: calc(100% - 40px); /* コンテナの高さからパディング等を引いた高さ */
+}
+
+.info-box {
+    background-color: rgba(245, 245, 245, 0.8); /* 半透明の白 */
+    border-radius: 5px;
+    overflow: hidden; /* ヘッダーがはみ出ないように */
+    display: flex;
+    flex-direction: column;
+     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.info-header {
+    padding: 10px 15px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 各ヘッダーの色 */
+.jr-suita {
+    background-color: #3b5998; /* 青系 */
+}
+.hankyu-suita {
+    background-color: #8b0000; /* 暗い赤系 */
+}
+.hankyu-toyotsu {
+    background-color: #8b0000; /* 暗い赤系 */
+}
+.katayama-bus {
+    background-color: #f0ad4e; /* 黄色系 */
+    color: #333; /* 文字色を濃くする */
+}
+
+
+.info-content {
+    padding: 15px;
+    flex-grow: 1; /* 残りのスペースを埋める */
+}
+
+.info-content p {
+    margin: 5px 0;
+}
+
+.scroll-text-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(200, 200, 200, 0.8); /* 半透明のグレー */
+    overflow: hidden;
+    height: 40px; /* スクロールテキストの高さ */
+    display: flex;
+    align-items: center;
+}
+
+.scroll-text {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%; /* 右端からスタート */
+    animation: scroll-left 20s linear infinite; /* アニメーション */
+    font-size: 1.1em;
+    color: #333;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* 左へ移動 */
+    }
+}

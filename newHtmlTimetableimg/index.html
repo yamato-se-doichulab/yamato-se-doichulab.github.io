@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>デジタルサイネージ風表示</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="datetime-container">
+                <div class="date" id="date"></div>
+                <div class="time" id="time"></div>
+                <div class="seconds" id="seconds"></div>
+            </div>
+            <div class="weather-info box">
+                ここに天気予報
+            </div>
+            <div class="extra-info box">
+                ここに<br>なんかいる
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="info-grid">
+                <div class="info-box">
+                    <div class="info-header jr-suita">JR吹田駅</div>
+                    <div class="info-content">
+                        <p>次の電車:</p>
+                        <p>XX:XX発</p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="info-header hankyu-suita">阪急吹田駅</div>
+                    <div class="info-content">
+                        <p>次の電車:</p>
+                         <p>XX:XX発</p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="info-header hankyu-toyotsu">阪急豊津駅</div>
+                    <div class="info-content">
+                        <p>次の電車:</p>
+                         <p>XX:XX発</p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="info-header katayama-bus">片山小学校前(バス)</div>
+                    <div class="info-content">
+                        <p>次のバス:</p>
+                         <p>XX:XX発</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-text-container">
+            <div class="scroll-text">
+                ここにスクロールテキストを入力。ここにスクロールテキストを入力。ここにスクロールテキストを入力。
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
